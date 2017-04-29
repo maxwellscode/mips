@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 
-int magic(int n);
 
 int main() {
 	
