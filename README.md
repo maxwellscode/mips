@@ -1,3 +1,3 @@
 # mips examples
-This is repository that contains a list of mips source code examples.
+This is a repository that contains a list of mips source code examples for learning purpose.
 
