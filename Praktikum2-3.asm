@@ -51,6 +51,8 @@ male_n:
 		
 		addi $a0,$a0,-1
 		jal female_n
+		move $v0, $a0
+		jal male_n
 		
 		sub $a0, $s1, $a0 
 		#move $a0,$s1
@@ -83,6 +85,8 @@ female_n:
 		
 		addi $a0,$a0,-1
 		jal male_n
+		move $v0, $a0
+		jal female_n
 		
 		sub $a0, $s1, $a0 
 		move $v0,$a0
