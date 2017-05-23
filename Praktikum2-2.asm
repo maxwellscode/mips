@@ -55,6 +55,8 @@ magic_n:
 	# else if n <= 100
 	addi $a0,$a0,11
 	jal magic_n
+	move $v0, $a0
+	jal magic_n
 	
 	lw $ra, 0($sp)
 	addi $sp,$sp,4
