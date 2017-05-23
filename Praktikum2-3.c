@@ -25,7 +25,7 @@ int male(int n) {
 	}
 
 	if(n > 0) {
-		return n - female(n-1);
+		return n - male(female(n-1));
 		// 1 - 
 	}
 	
@@ -39,7 +39,7 @@ int female(int n) {
 	}
 	
 	if(n > 0) {
-		return n - male(n-1);
+		return n - female(male(n-1));
 	}
 	
 	return 0;
